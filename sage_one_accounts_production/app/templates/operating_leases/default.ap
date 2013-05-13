@@ -7,13 +7,9 @@
 		<th></th>
 		<th><%= data(:Operating_lease_1) %></th>
 		<th><%= data(:Operating_lease_1) %></th>
-		<th><%= data(:Operating_lease_2) %></th>
-		<th><%= data(:Operating_lease_2) %></th>
 	</tr>
 <tr>
 		<th></th>
-		<th><%= data(:YearTMinus0) %></th>
-		<th><%= data(:YearTMinus1) %></th>
 		<th><%= data(:YearTMinus0) %></th>
 		<th><%= data(:YearTMinus1) %></th>
 	</tr>	
@@ -22,16 +18,8 @@
 		<th><%= data(:Currency) %></th>
 		<th><%= data(:Currency) %></th>
 	</tr>		
-<tr>
-		<td>Expiring:</td>
-		<td></td>
-		<td></td>
-	</tr>		
-<tr>
-		<td>within one year</td>
-		<td><%= data(:Op_lease_LB_TMinus0) %></td>
-		<td><%= data(:Op_lease_LB_TMinus1) %></td>
-	</tr>		
+	
+	
 	
 	
 </table>
