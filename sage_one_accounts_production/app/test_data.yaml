@@ -158,5 +158,6 @@ Other_creditors_more_notenumber: 11
 Provisions_notenumber: 12
 
 Operating_lease_1: Land & buildings
-
-
+Op_lease_LB_TMinus0: 0.3m
+Op_lease_LB_TMinus1: 0.1m
+Operating_lease_2: Plant & machinery
