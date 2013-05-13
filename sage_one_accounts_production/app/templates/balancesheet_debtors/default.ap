@@ -1,0 +1,6 @@
+<tr>
+		<td class="description">Debtors</td>
+		<th class="noteNumber"><%= data_for(:Debtors_notenumber) %></th>
+		<td><%= sum_of(:Trade_debtors_TMinus0, :Amounts_owed_by_group_undertakings_TMinus0, :Other_debtors_TMinus0, :Prepayments_and_accrued_income_TMinus0) %></td>
+		<td><%= sum_of(:Trade_debtors_TMinus1, :Amounts_owed_by_group_undertakings_TMinus1, :Other_debtors_TMinus1, :Prepayments_and_accrued_income_TMinus1) %></td>
+	</tr>

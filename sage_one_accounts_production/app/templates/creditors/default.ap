@@ -1,0 +1,45 @@
+<!--This is a comment. Comments are not displayed in the browser-->
+<!-- templates > creditors > default.ap -->
+
+<h1>Creditors Note</h1>
+
+<table>
+	<tr>
+		<th></th>
+		<th><%= data :YearTMinus0 %></th>
+		<th><%= data :YearTMinus1 %></th>
+	</tr>
+	<tr>
+		<td>Bank loans and overdrafts</td>
+		<td><%= data :Bank_loans_and_overdrafts_TMinus0 %></td>
+		<td><%= data :Bank_loans_and_overdrafts_TMinus1 %></td>
+	</tr>
+	<tr>
+		<td>Trade creditors</td>
+		<td><%= data(:Trade_creditors_TMinus0) %></td>
+		<td><%= data(:Trade_creditors_TMinus1) %></td>
+	</tr>
+	<tr>
+		<td>Amounts owed to group undertakings and other undertakings in which the company has a participating interest</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Taxation and social security</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>convertible loans</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+    <%= content.block :extrarow %>
+    
+	<tr>
+		<td>Other creditors</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>

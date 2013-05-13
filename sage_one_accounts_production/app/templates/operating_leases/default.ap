@@ -1,0 +1,3 @@
+<h1><%= data :company_name %></h1>
+<h1>Operating leases</h1>
+<h2><%= data :Period_end_date %></h2>

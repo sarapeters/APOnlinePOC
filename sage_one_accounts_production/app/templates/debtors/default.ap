@@ -1,0 +1,41 @@
+<!--This is a comment. Comments are not displayed in the browser-->
+<!-- templates > debtors > default.ap -->
+
+This is the debtors note.
+<h1>Debtors Note</h1>
+
+<table>
+	<tr>
+		<th></th>
+		<th><%= data(:YearTMinus0) %></th>
+		<th><%= data(:YearTMinus1) %></th>
+	</tr>
+	<tr>
+		<td>Trade debtors</td>
+		<td><%= data(:Trade_Debtors_TMinus0) %></td>
+		<td><%= data(:Trade_Debtors_TMinus1) %></td>
+	</tr>	
+	
+	<tr>
+		<td>Other debtors</td>
+		<td><%= data(:Other_Debtors_TMinus0) %></td>
+		<td><%= data(:Other_Debtors_TMinus1) %></td>
+	</tr>	
+	
+	
+	<tr>
+		<td>Prepayments and accrued income</td>
+		<td><%= data(:Prepayments_and_accrued_income_TMinus0) %></td>
+		<td><%= data(:Prepayments_and_accrued_income_TMinus1) %></td>
+	</tr>
+	<tr>
+	    <td>
+			<b>Total debtors</b>
+		</td>
+		<td><%= sum_of(:Trade_Debtors_TMinus0, :Other_Debtors_TMinus0, :Prepayments_and_accrued_income_TMinus0) %></td>
+		<td><%= calc.sum data(:Trade_Debtors_TMinus1), data(:Other_Debtors_TMinus1), data(:Prepayments_and_accrued_income_TMinus1) %></td>
+	  </tr>
+	  
+</table>
+
+<p><%= content.block :debtors_paragraphaftertable %></p?>

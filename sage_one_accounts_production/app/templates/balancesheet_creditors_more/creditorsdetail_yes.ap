@@ -1,0 +1,42 @@
+<tr>
+		<td><b>Creditors: amounts falling due within one year:</b></td>
+		<th></th>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Bank loans and overdrafts</td>
+		<th></th>
+		<td><%= data_for(:Bank_loans_and_overdrafts_TMinus0) %></td>
+		<td><%= data_for(:Bank_loans_and_overdrafts_TMinus1) %></td>
+	</tr>
+	<tr>
+		<td>Trade creditors</td>
+		<th></th>
+		<td><%= data_for(:Trade_creditors_TMinus0) %></td>
+		<td><%= data_for(:Trade_creditors_TMinus1) %></td>
+	</tr>
+	<tr>
+		<td>Amounts owed to group undertakings</td>
+		<th></th>
+		<td><%= data_for(:Amounts_owed_to_group_undertakings_TMinus0) %></td>
+		<td><%= data_for(:Amounts_owed_to_group_undertakings_TMinus1) %></td>
+	</tr>
+	<tr>
+		<td>Other creditors</td>
+		<th><%= data_for(:Other_creditors_more_notenumber) %></th>
+		<td><%= data_for(:Amounts_owed_to_group_undertakings_TMinus0) %></td>
+		<td><%= data_for(:Amounts_owed_to_group_undertakings_TMinus1) %></td>
+	</tr>
+	<tr>
+		<td>Accruals and deferred income</td>
+		<th></th>
+		<td><%= data_for(:Accruals_and_deferred_income_TMinus0) %></td>
+		<td><%= data_for(:Accruals_and_deferred_income_TMinus1) %></td>
+	</tr>
+	<tr>
+		<td><b>Total current liabilities</b></td>
+		<th></th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><%= sum_of(:Bank_loans_and_overdrafts_TMinus0, :Trade_creditors_TMinus0, :Amounts_owed_to_group_undertakings_TMinus0, :Amounts_owed_to_group_undertakings_TMinus0, :Accruals_and_deferred_income_TMinus0) %></u></b></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><%= sum_of(:Bank_loans_and_overdrafts_TMinus1, :Trade_creditors_TMinus1, :Amounts_owed_to_group_undertakings_TMinus1, :Amounts_owed_to_group_undertakings_TMinus1, :Accruals_and_deferred_income_TMinus1) %></u></b></td>
+	</tr>

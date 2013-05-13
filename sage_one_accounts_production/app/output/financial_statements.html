@@ -1,0 +1,475 @@
+                     
+<html>
+  <head> 
+	<style>
+	    table {
+			width: 100%;
+			empty-cells:show;	
+			border-spacing:0;
+			border-collapse: collapse;
+
+		}     
+		
+		td, th {
+			border: 1px solid gray;
+			border-spacing:0;
+			border-collapse: collapse;
+			vertical-align:top;
+			empty-cells:show;
+			text-align:right;			
+			max-width:30%;
+			min-width:15%;
+			width:15%;
+		}
+		
+		th.description {		
+			text-align:left;
+			min-width:5%;
+			width:auto;
+		}
+		
+		td.description {		
+			text-align:left;
+			min-width:40%;
+			width:auto;
+			}
+		
+		th.noteNumber {
+			text-align:center;
+		}
+	</style>   
+  </head>
+  <body>
+    
+  
+	<div> 
+      We, the undersigned, confirm that this set of accounts is great.<!-- Comment -->
+    </div>
+  
+	<div>
+      <!--This is a comment. Comments are not displayed in the browser-->
+<!-- templates > creditors > default.ap -->
+
+<h1>Creditors Note</h1>
+
+<table>
+	<tr>
+		<th></th>
+		<th>2011</th>
+		<th>2010</th>
+	</tr>
+	<tr>
+		<td>Bank loans and overdrafts</td>
+		<td>40000</td>
+		<td>40000</td>
+	</tr>
+	<tr>
+		<td>Trade creditors</td>
+		<td>66000</td>
+		<td>66000</td>
+	</tr>
+	<tr>
+		<td>Amounts owed to group undertakings and other undertakings in which the company has a participating interest</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Taxation and social security</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>convertible loans</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+    	<tr>
+		<td>This is an extra row</td>
+		<td>106025.46</td>
+		<td></td>
+	</tr>
+    
+	<tr>
+		<td>Other creditors</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+    </div>
+	
+	<hr>
+	chris was er...
+	<div>
+      <h1>Profit</h1>
+
+This is the profit content block
+
+<h2>profit sub heading</h2>
+some more text
+    </div>
+    
+	<hr>
+	
+	<div>
+      <!--This is a comment. Comments are not displayed in the browser-->
+<!-- Templates > Loss > default.ap -->
+
+<H1>Loss</h1>
+
+This is the loss content block
+
+The stock value is <b>200</b>
+
+Some more content
+
+<table>
+  <tr>
+  	<td>Stock</td>
+  	<td>200</td>
+  </tr>
+  <tr>
+  	<td>Debt</td>
+  	<td>100</td>
+  </tr>
+</table>
+
+<hr>
+    </div>
+	
+	<hr>
+	
+	<div>
+      <!--This is a comment. Comments are not displayed in the browser-->
+<!-- templates > debtors > default.ap -->
+
+This is the debtors note.
+<h1>Debtors Note</h1>
+
+<table>
+	<tr>
+		<th></th>
+		<th>2011</th>
+		<th>2010</th>
+	</tr>
+	<tr>
+		<td>Trade debtors</td>
+		<td>20000</td>
+		<td>25000</td>
+	</tr>	
+	
+	<tr>
+		<td>Other debtors</td>
+		<td>50000</td>
+		<td>7500</td>
+	</tr>	
+	
+	
+	<tr>
+		<td>Prepayments and accrued income</td>
+		<td>17000</td>
+		<td>17000</td>
+	</tr>
+	<tr>
+	    <td>
+			<b>Total debtors</b>
+		</td>
+		<td><span title="=SUM(Trade_Debtors_TMinus0, Other_Debtors_TMinus0, Prepayments_and_accrued_income_TMinus0)">87000</span></td>
+		<td>49500</td>
+	  </tr>
+	  
+</table>
+
+<p>please enter your text here</p?>
+    </div>
+	
+	<hr>
+	
+	<div>
+      <!--This is a comment. Comments are not displayed in the browser-->
+<!-- Templates > Directors > default.ap -->
+
+This is the directors report.
+
+<h1>Sara's Sweets Limited</h1>
+<h1>The Directors' Report</h1>
+<h2>31st December 2012</h2>
+
+The directors' present their report and the financial statements for the year ended 31st December 2012.
+
+<h3>Principal activities</h3>
+The principal activities of the company is that of <!--This is a comment. Comments are not displayed in the browser-->
+<!-- Templates > directorsrepport_principleactivities > default.ap -->
+
+
+
+sweet making and selling.
+
+
+<h3>Directors</h3>
+The following directors have held office since 1st January 2012:
+
+<p><span title="=director1">Matthew Turner</span> Resigned 30th December 2012</p>
+<p>Sara Peters Appointed 3rd January 2012</p>
+
+<h3>Qualifying third party indemnity provisions</h3>
+A qualifying third party indemnity provision was not in force during the financial year.
+
+<!--Nothing should output if donations are less than £2,000-->
+<!--This should not output-->
+<p>
+<b>ON BEHALF OF THE BOARD</b></p>
+<p>
+
+__________________</p>
+<p><span title="=director1">Matthew Turner</span></p>
+    </div>
+	
+	<hr>
+	
+	<div>
+      <!--This is the balance sheet-->
+
+<h1>Sara's Sweets Limited</h1>
+<h1>Balance sheet</h1>
+<h2>As at 31st December 2012</h2>
+
+<table>
+
+<tr>
+		<th> </th>
+		<th class="noteNumber">Note</th>
+		<th>2011</th>
+		<th>2010</th>
+	</tr>
+<tr>
+		<th> </th>
+		<th> </th>
+		<th>£</th>
+		<th>£</th>
+	</tr>	
+	
+<tr>
+		<td class="description">Called up share capital not paid</td>
+		<th> </th>
+		<td><span title="=Called_up_share_capital_not_paid_TMinus0">100</span></td>
+		<td><span title="=Called_up_share_capital_not_paid_TMinus1">100</span></td>
+	</tr>
+<tr>
+		<td> </td>
+	
+	</tr>
+<tr>
+		<td class="description"><b>Fixed assets</b></td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	</tr>
+<tr>
+		<td class="description">Goodwill:</td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	
+	</tr>	
+<tr>
+		<td class="description">Positive goodwill</td>
+		<th> </th>
+		<td><span title="=Positive_goodwill_TMinus0">1000</span></td>
+		<td><span title="=Positive_goodwill_TMinus1">1000</span></td>
+	</tr>	
+	
+<tr>
+		<td class="description">Negative goodwill</td>
+		<th> </th>
+		<td><span title="=Negative_goodwill_TMinus0">1000</span></td>
+		<td><span title="=Negative_goodwill_TMinus1">1000</span></td>
+	</tr>	
+<tr>
+		<td class="description">Net goodwill</td>
+		<th class="noteNumber"><span title="=Net_goodwill_notenumber">1</span></th>
+		<td><div style="text-decoration: overline;"><span title="=SUM(Positive_goodwill_TMinus0, Negative_goodwill_TMinus0)">2000</span></td>
+		<td><div style="text-decoration: overline;"><span title="=SUM(Positive_goodwill_TMinus1, Negative_goodwill_TMinus1)">2000</span></td>
+	</tr>	
+<tr>
+		<td class="description">Other intangible assets</td>
+		<th class="noteNumber"><span title="=Intangible_assets_notenumber">2</span></th>
+		<td><span title="=Other_intangible_assets_TMinus0">10000</span></td>
+		<td><span title="=Other_intangible_assets_TMinus1">10000</span></td>
+	</tr>		
+<tr>
+		<td class="description">Tangible assets</td>
+		<th class="noteNumber"><span title="=Tangible_assets_notenumber">3</span></th>
+		<td><span title="=SUM(Motor_vehicles_TMinus0, Plant_and_machinery_TMinus0, Computer_equipment_TMinus0)">12000</span></td>
+		<td><span title="=SUM(Motor_vehicles_TMinus1, Plant_and_machinery_TMinus1, Computer_equipment_TMinus1)">15000</span></td>
+	</tr>		
+<tr>
+		<td class="description">Investments</td>
+		<th class="noteNumber"><span title="=Investments_notenumber">4</span></th>
+		<td><span title="=Investments_TMinus0">40000</span></td>
+		<td><span title="=Investments_TMinus1">40000</span></td>
+	</tr>	
+<tr>
+		<td> </td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span title="=SUM(Positive_goodwill_TMinus0, Negative_goodwill_TMinus0, Other_intangible_assets_TMinus0, Motor_vehicles_TMinus0, Plant_and_machinery_TMinus0, Computer_equipment_TMinus0, Investments_TMinus0)">64000</span></u></b></td>
+		<td><b><u><div style="text-decoration: overline;"><span title="=SUM(Positive_goodwill_TMinus1, Negative_goodwill_TMinus1, Other_intangible_assets_TMinus1, Motor_vehicles_TMinus1, Plant_and_machinery_TMinus1, Computer_equipment_TMinus1, Investments_TMinus1)">67000</span></u></b></td>
+	</tr>		
+<tr>
+		<td class="description"><b>Current assets</b></td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	</tr>	
+<tr>
+		<td class="description">Stocks</td>
+		<th class="noteNumber"><span title="=Stocks_notenumber">5</span></th>
+		<td><span title="=SUM(Finished_goods_TMinus0, Work_in_progress_TMinus0, Raw_materials_TMinus0)">3000</span></td>
+		<td><span title="=SUM(Finished_goods_TMinus1, Work_in_progress_TMinus1, Raw_materials_TMinus1)">1500</span></td>
+	</tr>	
+
+		<tr>
+		<td class="description">Debtors</td>
+		<th class="noteNumber"><span title="=Debtors_notenumber">6</span></th>
+		<td><span title="=SUM(Trade_debtors_TMinus0, Amounts_owed_by_group_undertakings_TMinus0, Other_debtors_TMinus0, Prepayments_and_accrued_income_TMinus0)">82000</span></td>
+		<td><span title="=SUM(Trade_debtors_TMinus1, Amounts_owed_by_group_undertakings_TMinus1, Other_debtors_TMinus1, Prepayments_and_accrued_income_TMinus1)">82000</span></td>
+	</tr>
+
+<tr>
+		<td class="description">Investments</td>
+		<th> </th>
+		<td><span title="=Investments_current_assets_TMinus0">5000</span></td>
+		<td><span title="=Investments_current_assets_TMinus1">5000</span></td>
+	</tr>			
+<tr>
+		<td class="description">Cash at bank and in hand</td>
+		<th class="noteNumber"><span title="=Cash_at_bank_notenumber">7</span></th>
+		<td><span title="=Cash_at_bank_and_in_hand_TMinus0">20000</span></td>
+		<td><span title="=Cash_at_bank_and_in_hand_TMinus1">20000</span></td>
+	</tr>			
+
+<tr>
+		<td> </td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><span title="=SUM(Positive_goodwill_TMinus0, Negative_goodwill_TMinus0, Other_intangible_assets_TMinus0, Motor_vehicles_TMinus0, Plant_and_machinery_TMinus0, Computer_equipment_TMinus0, Investments_TMinus0, Finished_goods_TMinus0, Work_in_progress_TMinus0, Raw_materials_TMinus0, Trade_debtors_TMinus0, Amounts_owed_to_group_undertakings_TMinus0, Other_debtors_TMinus0, Prepayments_and_accrued_income_TMinus0, Investments_current_assets_TMinus0, Cash_at_bank_and_in_hand_TMinus0)">174000</span></u></b></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><span title="=SUM(Positive_goodwill_TMinus1, Negative_goodwill_TMinus1, Other_intangible_assets_TMinus1, Motor_vehicles_TMinus1, Plant_and_machinery_TMinus1, Computer_equipment_TMinus1, Investments_TMinus1, Finished_goods_TMinus1, Work_in_progress_TMinus1, Raw_materials_TMinus1, Trade_debtors_TMinus1, Amounts_owed_to_group_undertakings_TMinus1, Other_debtors_TMinus1, Prepayments_and_accrued_income_TMinus1, Investments_current_assets_TMinus1, Cash_at_bank_and_in_hand_TMinus1)">175500</span></u></b></td>
+	</tr>		
+	
+		<tr>
+	<td class="description"><b>Creditors: amounts falling due within one year</b></td>
+	<th class="noteNumber"><span title="=Creditors_less_than_one_year_notenumber">8</span></th>
+	<td><span title="=SUM(Bank_loans_and_overdrafts_TMinus0, Trade_creditors_TMinus0, Amounts_owed_to_group_undertakings_TMinus0, Other_creditors_TMinus0, Accruals_and_deferred_income_TMinus0)">165000</span></td>
+	<td><span title="=SUM(Bank_loans_and_overdrafts_TMinus1, Trade_creditors_TMinus1, Amounts_owed_to_group_undertakings_TMinus1, Other_creditors_TMinus1, Accruals_and_deferred_income_TMinus1)">165000</span></td>
+</tr>
+
+
+<tr>
+		<td class="description"><b>Total assets less current liabilities</b></td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;">need subtract</u></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"></u></td>
+	</tr>		
+	
+		<tr>
+	<td class="description"><b>Creditors: amounts falling due after more than one year</b></td>
+	<th class="noteNumber"><span title="=Creditors_more_than_one_year_notenumber">10</span></th>
+	<td><span title="=SUM(Bank_loans_and_overdrafts_TMinus0_more, Trade_creditors_TMinus0_more, Amounts_owed_to_group_undertakings_TMinus0_more, Other_creditors_TMinus0_more, Accruals_and_deferred_income_TMinus0_more)">165000</span></td>
+	<td><span title="=SUM(Bank_loans_and_overdrafts_TMinus1_more, Trade_creditors_TMinus1_more, Amounts_owed_to_group_undertakings_TMinus1_more, Other_creditors_TMinus1_more, Accruals_and_deferred_income_TMinus1_more)">165000</span></td>
+</tr>
+
+<tr>
+		<td class="description">Provisions for liabilities</td>
+		<th class="noteNumber"><span title="=Provisions_notenumber">12</span></th>
+		<td><span title="=Provisions_TMinus0">55000</span></td>
+		<td><span title="=Provisions_TMinus1">55000</span></td>
+	</tr>			
+<tr>
+		<td class="description">Balance sheet suspense</td>
+		<th> </th>
+		<td><span title="=Suspense_TMinus0">0</span></td>
+		<td><span title="=Suspense_TMinus1">0</span></td>
+	</tr>		
+
+<tr>
+		<td class="description"><b>Net asset/liability</b></td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;">need subtract</u></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"></u></td>		
+	</tr>		
+	
+	<tr>
+		<td class="description"><b>Capital and reserves</b></td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	</tr>		
+
+<tr>
+		<td class="description">Called up share capital</td>
+		<th> </th>
+		<td><span title="=Called_up_share_capital_TMinus0">100</span></td>
+		<td><span title="=Called_up_share_capital_TMinus1">100</span></td>		
+	</tr>	
+	
+<tr>
+		<td class="description">Share premium account</td>
+		<th> </th>
+		<td><span title="=Share_premium_account_TMinus0">100</span></td>
+		<td><span title="=Share_premium_account_TMinus1">100</span></td>		
+	</tr>	
+	
+<tr>
+		<td class="description">Other reserves</td>
+		<th> </th>
+		<td><span title="=Other_reserves_TMinus0">100000</span></td>
+		<td><span title="=Other_reserves_TMinus1">100000</span></td>		
+	</tr>	
+	
+<tr>
+		<td class="description">Profit and loss account</td>
+		<th> </th>
+		<td><span title="=Profit_and_loss_account_TMinus0">464000</span></td>
+		<td><span title="=Profit_and_loss_account_TMinus1">464000</span></td>		
+	</tr>	
+<tr>
+		<td class="description"><b>Total capital employed</b></td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><span title="=SUM(Called_up_share_capital_TMinus0, Share_premium_account_TMinus0, Other_reserves_TMinus0, Profit_and_loss_account_TMinus0)">564200</span></u></b></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><span title="=SUM(Called_up_share_capital_TMinus1, Share_premium_account_TMinus1, Other_reserves_TMinus1, Profit_and_loss_account_TMinus1)">564200</span></u></b></td>		
+	</tr>		
+		
+</table>
+
+For the year ended 31st December 2012, the company was entitled to exemption from the requirement to have an audit under the provision of section 477 of the Companies Act 2006 relating to small companies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+	
+<div>
+      <h1>Sara's Sweets Limited</h1>
+<h1>Operating leases</h1>
+<h2>31st December 2012</h2>
+    </div>	
+	
+	
+	
+	
+  </body>
+</html>

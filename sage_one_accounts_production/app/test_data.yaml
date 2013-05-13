@@ -1,0 +1,162 @@
+YearTMinus0: 2011
+YearTMinus1: 2010
+Currency: £
+Entity_type: company
+Year_or_period: year
+Legislation: section 477
+Company_law: Companies Act 2006
+Company_size: small
+
+stock: 200
+debt: 100
+
+Bank_loans_and_overdrafts_TMinus0: 1000
+Bank_loans_and_overdrafts_TMinus1: 2000
+Trade_creditors_TMinus0: 3000
+Trade_creditors_TMinus1: 4000
+
+director1: Matthew Turner
+director2: Sara Peters
+director1_appointed: Appointed
+director2_appointed: Appointed 3rd January 2012
+director1_resigned: Resigned 30th December 2012
+director2_resigned: Resigned
+
+
+Trade_Debtors_TMinus0: 20,000
+Trade_Debtors_TMinus1: 25,000
+
+Other_Debtors_TMinus0: 50000
+Other_Debtors_TMinus1: 7500
+
+Prepayments_and_accrued_income_TMinus0: 50000
+Prepayments_and_accrued_income_TMinus1: 75000
+
+Period_end_date: 31st December 2012
+company_name: Sara's Sweets Limited
+Period_start_date: 1st January 2012
+
+
+Called_up_share_capital_not_paid_TMinus0: 100
+Called_up_share_capital_not_paid_TMinus1: 100
+Positive_goodwill_TMinus0: 1000
+Positive_goodwill_TMinus1: 1000
+Negative_goodwill_TMinus0: 1000
+Negative_goodwill_TMinus1: 1000
+Other_intangible_assets_TMinus0: 10000
+Other_intangible_assets_TMinus1: 10000
+Motor_vehicles_TMinus0: 4000
+Plant_and_machinery_TMinus0: 4000
+Computer_equipment_TMinus0: 4000
+Motor_vehicles_TMinus1: 5000
+Plant_and_machinery_TMinus1: 5000
+Computer_equipment_TMinus1: 5000
+Investments_TMinus0: 40000
+Investments_TMinus1: 40000
+Finished_goods_TMinus0: 1000
+Work_in_progress_TMinus0: 1000
+Raw_materials_TMinus0: 1000
+Finished_goods_TMinus1: 500
+Work_in_progress_TMinus1: 500
+Raw_materials_TMinus1: 500
+Trade_debtors_TMinus0: 30000
+Trade_debtors_TMinus1: 30000
+Amounts_owed_by_group_undertakings_TMinus0: 10000
+Amounts_owed_by_group_undertakings_TMinus1: 10000
+Other_debtors_TMinus0: 25000
+Other_debtors_TMinus1: 25000
+Prepayments_and_accrued_income_TMinus0: 17000
+Prepayments_and_accrued_income_TMinus1: 17000
+Trade_debtors_TMinus0_oneyear: 15000
+Trade_debtors_TMinus1_oneyear: 15000
+Amounts_owed_by_group_undertakings_TMinus0_oneyear: 5000
+Amounts_owed_by_group_undertakings_TMinus1_oneyear: 5000
+Other_debtors_TMinus0_oneyear: 12500
+Other_debtors_TMinus1_oneyear: 12500
+Prepayments_and_accrued_income_TMinus0_oneyear: 8500
+Prepayments_and_accrued_income_TMinus1_oneyear: 8500
+Trade_debtors_TMinus0_more: 15000
+Trade_debtors_TMinus1_more: 15000
+Amounts_owed_by_group_undertakings_TMinus0_more: 5000
+Amounts_owed_by_group_undertakings_TMinus1_more: 5000
+Other_debtors_TMinus0_more: 12500
+Other_debtors_TMinus1_more: 12500
+Prepayments_and_accrued_income_TMinus0_more: 8500
+Prepayments_and_accrued_income_TMinus1_more: 8500
+Investments_current_assets_TMinus0: 5000
+Investments_current_assets_TMinus1: 5000
+Cash_at_bank_and_in_hand_TMinus0: 20000
+Cash_at_bank_and_in_hand_TMinus1: 20000
+Bank_loans_and_overdrafts_TMinus0: 40000
+Bank_loans_and_overdrafts_TMinus1: 40000
+Trade_creditors_TMinus0: 66000
+Trade_creditors_TMinus1: 66000
+Amounts_owed_to_group_undertakings_TMinus0: 10000
+Amounts_owed_to_group_undertakings_TMinus1: 10000
+Other_creditors_TMinus0: 23000
+Other_creditors_TMinus1: 23000
+Accruals_and_deferred_income_TMinus0: 26000
+Accruals_and_deferred_income_TMinus1: 26000
+Bank_loans_and_overdrafts_TMinus0_more: 40000
+Bank_loans_and_overdrafts_TMinus1_more: 40000
+Trade_creditors_TMinus0_more: 66000
+Trade_creditors_TMinus1_more: 66000
+Amounts_owed_to_group_undertakings_TMinus0_more: 10000
+Amounts_owed_to_group_undertakings_TMinus1_more: 10000
+Other_creditors_TMinus0_more: 23000
+Other_creditors_TMinus1_more: 23000
+Accruals_and_deferred_income_TMinus0_more: 26000
+Accruals_and_deferred_income_TMinus1_more: 26000
+Provisions_TMinus0: 55000
+Provisions_TMinus1: 55000
+Suspense_TMinus0: 0
+Suspense_TMinus1: 0
+Called_up_share_capital_TMinus0: 100
+Called_up_share_capital_TMinus1: 100
+Share_premium_account_TMinus0: 100
+Share_premium_account_TMinus1: 100
+Other_reserves_TMinus0: 100000
+Other_reserves_TMinus1: 100000
+Profit_and_loss_account_TMinus0: 464000
+Profit_and_loss_account_TMinus1: 464000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tangible_assets_TMinus0: sum_of(:Motor_vehicles_TMinus0, :Plant_and_machinery_TMinus0, :Computer_equipment_TMinus0)
+Tangible_assets_TMinus1: sum_of(:Motor_vehicles_TMinus1, :Plant_and_machinery_TMinus1, :Computer_equipment_TMinus1)
+
+Stocks_TMinus0: sum_of(:Finished_goods_TMinus0, :Work_in_progress_TMinus0, :Raw_materials_TMinus0)
+Stocks_TMinus1: sum_of(:Finished_goods_TMinus1, :Work_in_progress_TMinus1, :Raw_materials_TMinus1)
+Debtors_TMinus0: sum_of(:Trade_debtors_TMinus0, :Amounts_owed_by_group_undertakings_TMinus0, :Other_debtors_TMinus0, :Prepayments_and_accrued_income_TMinus0)
+Debtors_TMinus1: sum_of(:Trade_debtors_TMinus1, :Amounts_owed_by_group_undertakings_TMinus1, :Other_debtors_TMinus1, :Prepayments_and_accrued_income_TMinus1)
+Creditors_less_than_one_year_TMinus0: sum_of(:Bank_loans_and_overdrafts_TMinus0, :Trade_creditors_TMinus0, Amounts_owed_to_group_undertakings_TMinus0, :Other_creditors_TMinus0, :Accruals_and_deferred_income_TMinus0)
+Creditors_less_than_one_year_TMinus1: sum_of(:Bank_loans_and_overdrafts_TMinus1, :Trade_creditors_TMinus1, Amounts_owed_to_group_undertakings_TMinus1, :Other_creditors_TMinus1, :Accruals_and_deferred_income_TMin
+
+Net_goodwill_notenumber: 1
+Intangible_assets_notenumber: 2
+Tangible_assets_notenumber: 3
+Investments_notenumber: 4
+Stocks_notenumber: 5
+Debtors_notenumber: 6
+Cash_at_bank_notenumber: 7
+Creditors_less_than_one_year_notenumber: 8
+Other_creditors_notenumber: 9
+Creditors_more_than_one_year_notenumber: 10
+Other_creditors_more_notenumber: 11
+Provisions_notenumber: 12
+
+
+
+

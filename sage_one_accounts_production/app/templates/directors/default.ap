@@ -1,0 +1,31 @@
+<!--This is a comment. Comments are not displayed in the browser-->
+<!-- Templates > Directors > default.ap -->
+
+This is the directors report.
+
+<h1><%= data :company_name %></h1>
+<h1>The Directors' Report</h1>
+<h2><%= data :Period_end_date %></h2>
+
+The directors' present their report and the financial statements for the year ended <%= data :Period_end_date %>.
+
+<h3>Principal activities</h3>
+The principal activities of the company is that of <%= content.block :directorsreport_principalactivities %>
+
+<h3>Directors</h3>
+The following directors have held office since <%= data :Period_start_date %>:
+
+<p><%= data_for(:director1) %> <%= data :director1_resigned %></p>
+<p><%= data :director2 %> <%= data :director2_appointed %></p>
+
+<h3>Qualifying third party indemnity provisions</h3>
+<%= content.block :directorsreport_qualifyingindemnity %>
+
+<%= content.block :directorsreport_politicaldonations %>
+<%= content.block :directorsreport_politicalexpenditure %>
+<p>
+<b>ON BEHALF OF THE BOARD</b></p>
+<p>
+
+__________________</p>
+<p><%= data_for(:director1) %></p>

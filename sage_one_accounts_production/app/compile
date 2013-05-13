@@ -1,0 +1,16 @@
+require './financial_statements_compiler'
+
+filename = ARGV[0]
+puts "Compiling #{filename}..."
+compiler = AccountsProduction::FinancialStatementsCompiler.new 
+contents = compiler.compile filename
+
+puts "*****************"
+puts "Output:"
+puts ""
+puts contents
+
+output_path = "output/" + filename.sub(/[^.]+\z/,"html")
+File.open(output_path, 'w') { |f|
+  f.write contents
+}

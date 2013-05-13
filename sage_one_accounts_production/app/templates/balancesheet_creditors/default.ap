@@ -1,0 +1,6 @@
+<tr>
+	<td class="description"><b>Creditors: amounts falling due within one year</b></td>
+	<th class="noteNumber"><%= data_for(:Creditors_less_than_one_year_notenumber) %></th>
+	<td><%= sum_of(:Bank_loans_and_overdrafts_TMinus0, :Trade_creditors_TMinus0, :Amounts_owed_to_group_undertakings_TMinus0, :Other_creditors_TMinus0, :Accruals_and_deferred_income_TMinus0) %></td>
+	<td><%= sum_of(:Bank_loans_and_overdrafts_TMinus1, :Trade_creditors_TMinus1, :Amounts_owed_to_group_undertakings_TMinus1, :Other_creditors_TMinus1, :Accruals_and_deferred_income_TMinus1) %></td>
+</tr>

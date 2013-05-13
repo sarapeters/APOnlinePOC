@@ -1,0 +1,213 @@
+<!--This is the balance sheet-->
+
+<h1><%= data :company_name %></h1>
+<h1>Balance sheet</h1>
+<h2>As at <%= data :Period_end_date %></h2>
+
+<table>
+
+<tr>
+		<th> </th>
+		<th class="noteNumber">Note</th>
+		<th><%= data(:YearTMinus0) %></th>
+		<th><%= data(:YearTMinus1) %></th>
+	</tr>
+<tr>
+		<th> </th>
+		<th> </th>
+		<th><%= data(:Currency) %></th>
+		<th><%= data(:Currency) %></th>
+	</tr>	
+	
+<tr>
+		<td class="description">Called up share capital not paid</td>
+		<th> </th>
+		<td><%= data_for(:Called_up_share_capital_not_paid_TMinus0) %></td>
+		<td><%= data_for(:Called_up_share_capital_not_paid_TMinus1) %></td>
+	</tr>
+<tr>
+		<td> </td>
+	
+	</tr>
+<tr>
+		<td class="description"><b>Fixed assets</b></td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	</tr>
+<tr>
+		<td class="description">Goodwill:</td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	
+	</tr>	
+<tr>
+		<td class="description">Positive goodwill</td>
+		<th> </th>
+		<td><%= data_for(:Positive_goodwill_TMinus0) %></td>
+		<td><%= data_for(:Positive_goodwill_TMinus1) %></td>
+	</tr>	
+	
+<tr>
+		<td class="description">Negative goodwill</td>
+		<th> </th>
+		<td><%= data_for(:Negative_goodwill_TMinus0) %></td>
+		<td><%= data_for(:Negative_goodwill_TMinus1) %></td>
+	</tr>	
+<tr>
+		<td class="description">Net goodwill</td>
+		<th class="noteNumber"><%= data_for(:Net_goodwill_notenumber) %></th>
+		<td><div style="text-decoration: overline;"><%= sum_of(:Positive_goodwill_TMinus0, :Negative_goodwill_TMinus0) %></td>
+		<td><div style="text-decoration: overline;"><%= sum_of(:Positive_goodwill_TMinus1, :Negative_goodwill_TMinus1) %></td>
+	</tr>	
+<tr>
+		<td class="description">Other intangible assets</td>
+		<th class="noteNumber"><%= data_for(:Intangible_assets_notenumber) %></th>
+		<td><%= data_for(:Other_intangible_assets_TMinus0) %></td>
+		<td><%= data_for(:Other_intangible_assets_TMinus1) %></td>
+	</tr>		
+<tr>
+		<td class="description">Tangible assets</td>
+		<th class="noteNumber"><%= data_for(:Tangible_assets_notenumber) %></th>
+		<td><%= sum_of(:Motor_vehicles_TMinus0, :Plant_and_machinery_TMinus0, :Computer_equipment_TMinus0) %></td>
+		<td><%= sum_of(:Motor_vehicles_TMinus1, :Plant_and_machinery_TMinus1, :Computer_equipment_TMinus1) %></td>
+	</tr>		
+<tr>
+		<td class="description">Investments</td>
+		<th class="noteNumber"><%= data_for(:Investments_notenumber) %></th>
+		<td><%= data_for(:Investments_TMinus0) %></td>
+		<td><%= data_for(:Investments_TMinus1) %></td>
+	</tr>	
+<tr>
+		<td> </td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><%= sum_of(:Positive_goodwill_TMinus0, :Negative_goodwill_TMinus0, :Other_intangible_assets_TMinus0, :Motor_vehicles_TMinus0, :Plant_and_machinery_TMinus0, :Computer_equipment_TMinus0, :Investments_TMinus0) %></u></b></td>
+		<td><b><u><div style="text-decoration: overline;"><%= sum_of(:Positive_goodwill_TMinus1, :Negative_goodwill_TMinus1, :Other_intangible_assets_TMinus1, :Motor_vehicles_TMinus1, :Plant_and_machinery_TMinus1, :Computer_equipment_TMinus1, :Investments_TMinus1) %></u></b></td>
+	</tr>		
+<tr>
+		<td class="description"><b>Current assets</b></td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	</tr>	
+<tr>
+		<td class="description">Stocks</td>
+		<th class="noteNumber"><%= data_for(:Stocks_notenumber) %></th>
+		<td><%= sum_of(:Finished_goods_TMinus0, :Work_in_progress_TMinus0, :Raw_materials_TMinus0) %></td>
+		<td><%= sum_of(:Finished_goods_TMinus1, :Work_in_progress_TMinus1, :Raw_materials_TMinus1) %></td>
+	</tr>	
+
+		<%= content.block :balancesheet_debtors %>
+
+<tr>
+		<td class="description">Investments</td>
+		<th> </th>
+		<td><%= data_for(:Investments_current_assets_TMinus0) %></td>
+		<td><%= data_for(:Investments_current_assets_TMinus1) %></td>
+	</tr>			
+<tr>
+		<td class="description">Cash at bank and in hand</td>
+		<th class="noteNumber"><%= data_for(:Cash_at_bank_notenumber) %></th>
+		<td><%= data_for(:Cash_at_bank_and_in_hand_TMinus0) %></td>
+		<td><%= data_for(:Cash_at_bank_and_in_hand_TMinus1) %></td>
+	</tr>			
+
+<tr>
+		<td> </td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><%= sum_of(:Positive_goodwill_TMinus0, :Negative_goodwill_TMinus0, :Other_intangible_assets_TMinus0, :Motor_vehicles_TMinus0, :Plant_and_machinery_TMinus0, :Computer_equipment_TMinus0, :Investments_TMinus0, :Finished_goods_TMinus0, :Work_in_progress_TMinus0, :Raw_materials_TMinus0, :Trade_debtors_TMinus0, :Amounts_owed_to_group_undertakings_TMinus0, :Other_debtors_TMinus0, :Prepayments_and_accrued_income_TMinus0, :Investments_current_assets_TMinus0, :Cash_at_bank_and_in_hand_TMinus0) %></u></b></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><%= sum_of(:Positive_goodwill_TMinus1, :Negative_goodwill_TMinus1, :Other_intangible_assets_TMinus1, :Motor_vehicles_TMinus1, :Plant_and_machinery_TMinus1, :Computer_equipment_TMinus1, :Investments_TMinus1, :Finished_goods_TMinus1, :Work_in_progress_TMinus1, :Raw_materials_TMinus1, :Trade_debtors_TMinus1, :Amounts_owed_to_group_undertakings_TMinus1, :Other_debtors_TMinus1, :Prepayments_and_accrued_income_TMinus1, :Investments_current_assets_TMinus1, :Cash_at_bank_and_in_hand_TMinus1) %></u></b></td>
+	</tr>		
+	
+		<%= content.block :balancesheet_creditors %>
+
+<tr>
+		<td class="description"><b>Total assets less current liabilities</b></td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;">need subtract</u></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"></u></td>
+	</tr>		
+	
+		<%= content.block :balancesheet_creditors_more %>
+<tr>
+		<td class="description">Provisions for liabilities</td>
+		<th class="noteNumber"><%= data_for(:Provisions_notenumber) %></th>
+		<td><%= data_for(:Provisions_TMinus0) %></td>
+		<td><%= data_for(:Provisions_TMinus1) %></td>
+	</tr>			
+<tr>
+		<td class="description">Balance sheet suspense</td>
+		<th> </th>
+		<td><%= data_for(:Suspense_TMinus0) %></td>
+		<td><%= data_for(:Suspense_TMinus1) %></td>
+	</tr>		
+
+<tr>
+		<td class="description"><b>Net asset/liability</b></td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;">need subtract</u></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"></u></td>		
+	</tr>		
+	
+	<tr>
+		<td class="description"><b>Capital and reserves</b></td>
+		<th> </th>
+		<td> </td>
+		<td> </td>
+	</tr>		
+
+<tr>
+		<td class="description">Called up share capital</td>
+		<th> </th>
+		<td><%= data_for(:Called_up_share_capital_TMinus0) %></td>
+		<td><%= data_for(:Called_up_share_capital_TMinus1) %></td>		
+	</tr>	
+	
+<tr>
+		<td class="description">Share premium account</td>
+		<th> </th>
+		<td><%= data_for(:Share_premium_account_TMinus0) %></td>
+		<td><%= data_for(:Share_premium_account_TMinus1) %></td>		
+	</tr>	
+	
+<tr>
+		<td class="description">Other reserves</td>
+		<th> </th>
+		<td><%= data_for(:Other_reserves_TMinus0) %></td>
+		<td><%= data_for(:Other_reserves_TMinus1) %></td>		
+	</tr>	
+	
+<tr>
+		<td class="description">Profit and loss account</td>
+		<th> </th>
+		<td><%= data_for(:Profit_and_loss_account_TMinus0) %></td>
+		<td><%= data_for(:Profit_and_loss_account_TMinus1) %></td>		
+	</tr>	
+<tr>
+		<td class="description"><b>Total capital employed</b></td>
+		<th> </th>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><%= sum_of(:Called_up_share_capital_TMinus0, :Share_premium_account_TMinus0, :Other_reserves_TMinus0, :Profit_and_loss_account_TMinus0) %></u></b></td>
+		<td><b><u><div style="text-decoration: overline;"><span style="border-bottom: 1px double #000;"><%= sum_of(:Called_up_share_capital_TMinus1, :Share_premium_account_TMinus1, :Other_reserves_TMinus1, :Profit_and_loss_account_TMinus1) %></u></b></td>		
+	</tr>		
+		
+</table>
+
+For the <%= data :Year_or_period %> ended <%= data :Period_end_date %>, the <%= data :Entity_type %> was entitled to exemption from the requirement to have an audit under the provision of <%= data :Legislation %> of the <%= data :Company_law %> relating to <%= data :Company_size %> companies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

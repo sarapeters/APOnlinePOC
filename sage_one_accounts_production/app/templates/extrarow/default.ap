@@ -1,0 +1,5 @@
+	<tr>
+		<td>This is an extra row</td>
+		<td><%= calc.sum data(:Bank_loans_and_overdrafts_TMinus0), data(:Trade_creditors_TMinus0), calc.round(25.456778, 2) %></td>
+		<td></td>
+	</tr>

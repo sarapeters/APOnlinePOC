@@ -1,0 +1,18 @@
+	<tr>
+		<td>Debtors:</td>
+		<th><%= data_for(:Debtors_notenumber) %></th>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>amounts falling due within one year</td>
+		<th></th>
+		<td><%= sum_of(:Trade_debtors_TMinus0_oneyear, :Amounts_owed_by_group_undertakings_TMinus0_oneyear, :Other_debtors_TMinus0_oneyear, :Prepayments_and_accrued_income_TMinus0_oneyear) %></td>
+		<td><%= sum_of(:Trade_debtors_TMinus1_oneyear, :Amounts_owed_by_group_undertakings_TMinus1_oneyear, :Other_debtors_TMinus1_oneyear, :Prepayments_and_accrued_income_TMinus1_oneyear) %></td>
+	</tr>
+	<tr>
+		<td>amounts falling due more than one year</td>
+		<th></th>
+		<td><%= sum_of(:Trade_debtors_TMinus0_more, :Amounts_owed_by_group_undertakings_TMinus0_more, :Other_debtors_TMinus0_more, :Prepayments_and_accrued_income_TMinus0_more) %></td>
+		<td><%= sum_of(:Trade_debtors_TMinus1_more, :Amounts_owed_by_group_undertakings_TMinus1_more, :Other_debtors_TMinus1_more, :Prepayments_and_accrued_income_TMinus1_more) %></td>
+	</tr>

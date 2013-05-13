@@ -1,0 +1,91 @@
+                     
+<html>
+  <head> 
+	<style>
+	    table {
+			width: 100%;
+			empty-cells:show;	
+			border-spacing:0;
+			border-collapse: collapse;
+
+		}     
+		
+		td, th {
+			border: 1px solid gray;
+			border-spacing:0;
+			border-collapse: collapse;
+			vertical-align:top;
+			empty-cells:show;
+			text-align:right;			
+			max-width:30%;
+			min-width:15%;
+			width:15%;
+		}
+		
+		th.description {		
+			text-align:left;
+			min-width:5%;
+			width:auto;
+		}
+		
+		td.description {		
+			text-align:left;
+			min-width:40%;
+			width:auto;
+			}
+		
+		th.noteNumber {
+			text-align:center;
+		}
+	</style>   
+  </head>
+  <body>
+    
+  
+	<div> 
+      <%= content.director_pronoun %>, the undersigned, confirm that this set of accounts is great.<!-- Comment -->
+    </div>
+  
+	<div>
+      <%= content.block :creditors %>
+    </div>
+	
+	<hr>
+	chris was er...
+	<div>
+      <%= content.block :profit %>
+    </div>
+    
+	<hr>
+	
+	<div>
+      <%= content.block :loss %>
+    </div>
+	
+	<hr>
+	
+	<div>
+      <%= content.block :debtors %>
+    </div>
+	
+	<hr>
+	
+	<div>
+      <%= content.block :directors %>
+    </div>
+	
+	<hr>
+	
+	<div>
+      <%= content.block :balance_sheet %>
+    </div>
+	
+<div>
+      <%= content.block :operating_leases %>
+    </div>	
+	
+	
+	
+	
+  </body>
+</html>

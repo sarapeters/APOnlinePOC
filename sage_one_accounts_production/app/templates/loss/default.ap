@@ -1,0 +1,23 @@
+<!--This is a comment. Comments are not displayed in the browser-->
+<!-- Templates > Loss > default.ap -->
+
+<H1>Loss</h1>
+
+This is the loss content block
+
+The stock value is <b><%= data :stock %></b>
+
+Some more content
+
+<table>
+  <tr>
+  	<td>Stock</td>
+  	<td><%= data :stock %></td>
+  </tr>
+  <tr>
+  	<td>Debt</td>
+  	<td><%= data :debt %></td>
+  </tr>
+</table>
+
+<hr>

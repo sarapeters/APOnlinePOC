@@ -1,0 +1,12 @@
+	<tr>
+		<td>This is an extra row which is specific to frsse companies</td>
+		<td><%= calc.sum(data(:Bank_loans_and_overdrafts_TMinus0), data(:Trade_creditors_TMinus0), calc.round(80.326778, 2)) %></td>
+		<td><%= specialization(:type).class %></td>
+	</tr>
+	<% if specialization(:type) == "frsse" %>
+  <tr>
+	  <td>frsse specific text</td>
+	  <td><%= calc.sum data(:Bank_loans_and_overdrafts_TMinus0), data(:Trade_creditors_TMinus0), calc.round(80.326778, 2) %></td>
+	  <td></td>
+	</tr>
+	<% end %>
