@@ -24,7 +24,13 @@
 		<th><%= data(:Currency) %></th>
 		<th><%= data(:Currency) %></th>
 	</tr>		
-	
+<tr>
+		<th>Operating leases which expire: </th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>	
 	
 	
 	
