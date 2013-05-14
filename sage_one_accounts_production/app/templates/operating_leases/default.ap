@@ -7,14 +7,20 @@
 		<th></th>
 		<th><%= data(:Operating_lease_1) %></th>
 		<th><%= data(:Operating_lease_1) %></th>
+		<th><%= data(:Operating_lease_2) %></th>
+		<th><%= data(:Operating_lease_2) %></th>
 	</tr>
 <tr>
 		<th></th>
 		<th><%= data(:YearTMinus0) %></th>
 		<th><%= data(:YearTMinus1) %></th>
+		<th><%= data(:YearTMinus0) %></th>
+		<th><%= data(:YearTMinus1) %></th>
 	</tr>	
 <tr>
 		<th> </th>
+		<th><%= data(:Currency) %></th>
+		<th><%= data(:Currency) %></th>
 		<th><%= data(:Currency) %></th>
 		<th><%= data(:Currency) %></th>
 	</tr>		
